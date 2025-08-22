@@ -1,13 +1,13 @@
 # Data Dictionary
 
-| Column             | Description                                     | Data Type | Notes                         |
-|--------------------|------------------------------------------------|-----------|-------------------------------|
-| Year               | Calendar year of the sale                        | Integer   | Range: 2015 - 2024            |
-| Car_Brand          | Vehicle manufacturer brand                       | String    | Examples: BMW, Toyota, Audi   |
-| Car_Model          | Specific model name                              | String    | Examples: ModelA, ModelF      |
-| Car_Type           | Category of vehicle type                         | String    | Hatchback, SUV, Sedan, Coupe  |
-| Price              | Vehicle price in local currency                  | Float     | Contains missing values       |
-| Units_Sold         | Number of units sold                             | Float     | Target variable; some missing |
-| Showroom_Location  | City where the showroom is located               | String    | E.g., Bangalore, Hyderabad    |
-| Customer_Rating    | Average customer rating (1-5 scale)             | Float     | Contains missing values       |
-| Fuel_Type          | Fuel category of vehicle                         | String    | Petrol, Diesel, Electric, Hybrid; some missing |
+| Field              | Description                         | Variable Type     | Scale   | Example Value   | Additional Information                          |
+|--------------------|-------------------------------------|-------------------|---------|-----------------|-----------------------------------------------|
+| Year               | Year of sales                       | continuous         | Interval| 2020            | Calendar year; intervals equal; no true zero   |
+| Car_Brand          | Manufacturer brand                  | Categorical      | Nominal | Toyota          | No natural order                               |
+| Car_Model          | Specific model name                 | Categorical      | Nominal | Camry           | Model codes/labels                             |
+| Car_Type           | Vehicle category                    | Categorical      | Nominal | SUV             | Sedan, SUV, Coupe, etc.                        |
+| Price              | Vehicle price in currency           | Continuous       | Ratio   | 5,800,000       | Positive only; zero is meaningful (free)       |
+| Units_Sold         | Number of units sold                | continuous         | Ratio   | 430             | Count; zero is meaningful                      |
+| Showroom_Location  | City showroom location              | Categorical      | Nominal | Bangalore       | Cities; no natural order                       |
+| Customer_Rating    | Average customer rating (1-5 scale) | Continuous       | Interval| 4.5             | Differences meaningful; zero is arbitrary      |
+| Fuel_Type          | Fuel type of the vehicle            | Categorical      | Nominal | Petrol          | Petrol, Diesel, Electric, Hybrid               |
