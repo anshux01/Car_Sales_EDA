@@ -1,34 +1,30 @@
-# Car Showroom Sales Analysis — CRISP-ML(Q) Methodology
+# Car Showroom Sales Exploratory Data Analysis (EDA)
 
-This repository contains a structured exploratory data analysis and baseline modeling project on car showroom sales data spanning 2015-2024.
+This repository contains a structured exploratory data analysis project on car showroom sales data covering 2015–2024.
 
 ## Contents
 
-- `Project_Charter.md` — Business goals, objectives, stakeholders, and risks.
-- `Data_Dictionary.md` — Clear explanation of each data field.
-- `Business_Insights.md` — Summary of key analysis findings and statistical insights.
-- `modeling_notebook.ipynb` — Fully annotated Jupyter notebook with code and markdown explanations.
-- `processed_data.csv` — Final cleaned dataset with imputed values.
-- `README.md` — This file.
+- `PROJECT_CHARTER.md` — Business objectives, stakeholders, and success criteria
+- `DATA_DICTIONARY.md` — Detailed explanation of all dataset variables
+- `BUSINESS_INSIGHTS.md` — Key findings and actionable insights from the EDA
+- `Car_Showroom_Sales_Final.xlsx` — Cleaned data used in the analysis
+- `eda_notebook.ipynb` — Jupyter notebook with full data exploration and visualizations
 
-## Highlights
+## Overview
 
-- Removal of duplicates and treatment of missing values.
-- In-depth descriptive statistics including mean, median, and mode.
-- Visualizations including distribution plots, correlation heatmap, sales trend, and brand performance.
-- Outlier analysis confirming data quality.
-- Baseline Linear Regression model predicting sales volume.
-- Business-focused interpretation of data patterns.
+- Performed data cleaning: duplicates removal and missing value quantification
+- Calculated descriptive statistics (mean, median, mode, variance, std)
+- Created visualizations for price, sales, and ratings distributions
+- Conducted outlier detection and confirmed data integrity
+- Analyzed sales trends by year and brand
+- Followed CRISP-ML(Q) methodology to ensure a systematic and reproducible workflow
+
+## Requirements
+
+See `requirements.txt` for required Python packages.
 
 ## How to Use
 
-1. Clone this repository.
-2. Install required packages from `requirements.txt`.
-3. Run the Jupyter notebook to reproduce results.
-4. Explore data and model artifacts.
-5. Extend with additional analyses or dashboards as needed.
-
-## Contact
-
-For queries or collaboration, contact Anshuman Acharya at anshuman.acharyaa@gmail.com .
-
+1. Clone the repository.  
+2. Install dependencies: `pip install -r requirements.txt`  
+3. Run `eda_notebook.ipynb` to reproduce all analyses and visuals.
