@@ -30,5 +30,5 @@ This repository contains a structured exploratory data analysis and baseline mod
 
 ## Contact
 
-For queries or collaboration, contact [Your Name] at [your.email@example.com].
+For queries or collaboration, contact Anshuman Acharya at anshuman.acharyaa@gmail.com .
 
